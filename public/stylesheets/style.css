@@ -1,0 +1,20 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+textarea {
+  width:100%;
+}
+
+#translate {
+  margin-top: 20px;
+  width: 15%;
+  color: #fff;
+  background-color: #063aea;
+  border-color: #063aea;
+}
