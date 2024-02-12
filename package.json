@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "netlify-lambda build bin",
+    "build": "netlify-lambda build app.js",
     "start": "node ./bin/www"
   },
   "dependencies": {
