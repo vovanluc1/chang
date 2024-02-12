@@ -1,4 +1,4 @@
 [[redirects]]
-from = "/(.*)"
-to = "app.js"
+from = "/*"
+to = "/index.html"
 status = 200
