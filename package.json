@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "netlify-lambda serve ./bin",
-    "build": "netlify-lambda build ./bin"
+    "start": "netlify-lambda serve app.js",
+    "build": "netlify-lambda build app.js"
   },
   "dependencies": {
     "@netlify/functions": "^2.5.1",
