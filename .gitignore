@@ -3,5 +3,4 @@ node_modules/
 build/
 .vscode/
 .idea/
-node_modules/
-```
+functions
