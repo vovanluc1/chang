@@ -21,7 +21,8 @@ app.use(express.urlencoded({ extended: false, limit: '100mb' }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
+// app.use('/', indexRouter);
+app.use('/.netlify/functions', indexRouter);
 app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
