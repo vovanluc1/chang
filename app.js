@@ -21,8 +21,8 @@ app.use(express.urlencoded({ extended: false, limit: '100mb' }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-// app.use('/', indexRouter);
-app.use('/.netlify/functions/server', indexRouter);
+app.use('/', indexRouter);
+// app.use('/.netlify/functions/server', indexRouter);
 app.use('/users', usersRouter);
 app.use('/', (req, res) => res.sendFile(path.join(__dirname, './index.html')));
 
