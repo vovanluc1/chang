@@ -9,7 +9,7 @@ router.all('/', async function (req, res, next) {
     if (req.method === 'POST') {
         fromContent = req.body.fromContent;
         const lang = req.body.lang;
-        const result = fromContent.match(/(.|\n|\s){1,10000}/g) || []
+        const result = fromContent.match(/(.|\n|\s){1,5000}/g) || []
         for (let i = 0; i < result.length; i++) {
             const config = {
                 method: 'get',
