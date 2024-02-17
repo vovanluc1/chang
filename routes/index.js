@@ -28,7 +28,7 @@ router.all('/', async function (req, res, next) {
         }
     }
     return res.render('index', {
-        title: 'Express',
+        title: 'Translation',
         fromContent: fromContent,
         toContent: toContent
     });
