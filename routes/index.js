@@ -14,8 +14,11 @@ router.all('/', async function (req, res, next) {
             const config = {
                 method: 'get',
                 maxBodyLength: Infinity,
-                url: `https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&ie=UTF-8&oe=UTF-8&tl=${lang}&dt=t&q=${encodeURI(result[i])}`,
-                headers: {}
+                url: `https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&ie=UTF-8&oe=UTF-8&tl=${lang}&dt=t&q=${encodeURIComponent(result[i])}`,
+                headers: {
+                    'Accept': '*/*',
+                    'Accept-Encoding': 'gzip, deflate, br'
+                }
             }
             const txt = await axios.request(config)
                 .catch((error) => {
