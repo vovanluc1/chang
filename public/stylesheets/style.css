@@ -1,5 +1,5 @@
 body {
-  padding: 50px;
+  padding: 10px 50px 50px 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -13,8 +13,14 @@ textarea {
 
 #translate {
   margin-top: 20px;
-  width: 15%;
+  width: 20%;
   color: #fff;
   background-color: #063aea;
   border-color: #063aea;
+  cursor: pointer;
+  padding: 10px;
+}
+
+marquee {
+  color: #c2019a;
 }
