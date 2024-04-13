@@ -21,12 +21,13 @@
                 <option value="<%= prop%>" <%= selected%>><%= languages[prop]%></option>
             <% }); %>
           </select>
+        <input type="submit" id="translate" name="translate" value="TRANSLATE">
       </div>
       <div>
         <textarea id="toContent" name="toContent" rows="30"><%= toContent %></textarea>
       </div>
     </div>
-    <input type="submit" id="translate" name="translate" value="TRANSLATE">
+<!--    <input type="submit" id="translate" name="translate" value="TRANSLATE">-->
   </form>
   </body>
 </html>
