@@ -24,3 +24,7 @@ textarea {
 marquee {
   color: #c2019a;
 }
+
+.selection {
+  padding-bottom: 20px
+}

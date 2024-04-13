@@ -13,8 +13,8 @@
     </div>
     <div>
       <h2>TRANSLATION</h2>
-      <div>
-        <label for="cars">CHOOSE A LANGUAGE:</label>
+      <div class="selection">
+        <label for="lang">CHOOSE A LANGUAGE:</label>
         <select name="lang" id="lang">
             <% Object.keys(languages).forEach(prop => { %>
                 <% const selected = (prop === selectedOption) ? "selected" : ""; %>
